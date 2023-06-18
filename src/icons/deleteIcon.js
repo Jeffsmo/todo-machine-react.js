@@ -5,7 +5,7 @@ function CloseIcon(props){
     return (
         <TodoIcon
             type="CloseItem"
-            color=" rgba(229, 91, 153,0.5)"
+            color=" #6c00f8"
             onClick= {props.onDelete}
         />
     );

@@ -5,7 +5,7 @@ function CompleteIcon(props){
     return (
         <TodoIcon
             type="CompleteItem"
-            color={props.completed ? 'purple': 'black'}
+            color={props.completed ? '#6c00f8': 'black'}
             onClick={props.onCheck}
         />
     );

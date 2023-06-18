@@ -1,8 +1,15 @@
 import './TodoCounter.css';
 import Logo from '../../imagenes/logo.jpeg'
+import React from 'react';
+import { TodoContext } from '../../App/TodoContext';
 
-function ToDoCounter(props)
+function ToDoCounter()
 {
+   const {
+    completedTodos,
+    totalTodos,
+
+   } = React.useContext(TodoContext);
   return(
     <div className='title-container__counter-container'>
      <div className='counter-container'>
@@ -10,7 +17,7 @@ function ToDoCounter(props)
         <img src={Logo} alt='' className='Logo'/> </div>
       <h1 >
   
-        Has completado <span>{props.completed}</span> de <span>{props.total}</span>
+        Has completado <span>{completedTodos}</span> de <span>{totalTodos}</span>
     </h1>      
     </div>
     </div>

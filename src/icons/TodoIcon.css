@@ -27,7 +27,7 @@
   .list-Todo__item--CloseItem:hover {
    /* color: white;*/
     box-shadow:0 5px 25px rgba(216, 90, 233, 0.5);
-    background-color: purple;
+    background-color: #6c00f8;
     cursor: pointer;
   }
 
@@ -48,5 +48,5 @@
 
    .list-Todo__item--CompleteItem:hover .Icon-svg{
     /* color: white;*/
-        fill: purple;
+        fill: #6c00f8;
    }

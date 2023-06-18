@@ -13,13 +13,19 @@
 
 .list-Todo__item--completed{
   background-color:  rgba(10,44,68, 0.2);
+  border: 2px solid #c3c6ce;
+  
+ 
 }
 
   .list-Todo__item:hover{
+    border: 2px solid #c3c6ce;
     animation: item 5s linear infinite;
     background-color: rgba(10,44,68, 0.2);
     backdrop-filter: blur(6px);
     cursor: pointer;
+    -webkit-box-shadow: 10px 5px 10px 0 rgba(255, 255, 255, 0.877);
+    box-shadow: 10px 5px 10px 0 rgba(255, 255, 255, 0.877);
   }
 
   @keyframes item {

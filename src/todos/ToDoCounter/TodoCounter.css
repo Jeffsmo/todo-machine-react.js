@@ -24,7 +24,7 @@
   
   .counter-container span {
     font-weight: bold;
-    color: orange;
+    color: rgba(157, 244, 247, 0.945);
   }
   
   .counter-container img {
