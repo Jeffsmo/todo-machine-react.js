@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    max-width: 960px;
+    width: 200%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.todo-items::-webkit-scrollbar{
+  width: 7px;
+}
+
+.todo-items::-webkit-scrollbar-thumb:hover{
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.4); /* Por ejemplo: gris semitransparente */
+  backdrop-filter: blur(100px);
+}
+  
+  .todo-register{
+    flex-basis: 48%;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2); /* Por ejemplo: gris semitransparente */
+    backdrop-filter: blur(100px);
+    padding: 40px;
+    margin-right: 20px; 
+    max-height: 480px;
   }
-}
-
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #97ca3f;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .todo-items {
+    flex-direction: row-reverse;
+    flex-basis: 48%;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.2); /* Por ejemplo: gris semitransparente */
+    backdrop-filter: blur(100px);
+    padding: 40px;
+    margin-left: 20px;
+    max-height: 600px;
+    overflow: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .todo-register {
+    margin-right: 40px;
   }
-}
+
+  @media(max-width: 640px){
+    .container{
+      display: flex;
+      margin: 20px 40px 20px 20px;
+      padding: 5px;
+      width: 100%;
+      flex-direction: column;
+
+    }
+    .todo-items{
+      margin-right: 40px ;
+      margin-top: 40px;
+    }
+    .todo-register,
+    .todo-items{
+      backdrop-filter: none;
+    }
+    .todo-items{
+      max-height: 300px;
+      overflow: auto;
+    }
+    body{
+      background-size: cover;     
+    }
+  }

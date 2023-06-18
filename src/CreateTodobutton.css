@@ -1,0 +1,29 @@
+
+.addButton {
+  background-color:#61dafa;
+  box-shadow:0 5px 25px rgba(97,218,250,.5);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: lightblue;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  border: none;
+}
+
+.addButton:hover {
+  background-color:#da6ee4;
+  box-shadow:0 5px 25px rgba(216, 90, 233, 0.5);
+  background-color: purple;
+}
+
+.addButton.clicked {
+  transform: rotate(-270deg);
+}

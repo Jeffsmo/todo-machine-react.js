@@ -1,0 +1,52 @@
+.list-Todo__item--CompleteItem {
+    padding: 8px;
+    position: absolute;
+    left: 12px;
+  }
+  
+  .list-Todo__item--CloseItem {
+    padding: 4px;
+    position: absolute;
+    right: 24px;
+  }
+  
+  /*.list-Todo__item--active{
+    color: green;
+  }*/
+
+
+  .list-Todo__item--CloseItem {
+    position: absolute;
+    /*color: rgba(229, 91, 153,0.5);*/
+    padding: 2px;
+    border-radius: 50%;
+    background-color:rgba(200, 200, 200, 0.8);
+    top: -14px;
+    right: 0;
+  }
+  .list-Todo__item--CloseItem:hover {
+   /* color: white;*/
+    box-shadow:0 5px 25px rgba(216, 90, 233, 0.5);
+    background-color: purple;
+    cursor: pointer;
+  }
+
+  .Icon-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Icon-svg{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-Todo__item--CloseItem:hover .Icon-svg{
+    /* color: white;*/
+        fill: white;
+   }
+
+   .list-Todo__item--CompleteItem:hover .Icon-svg{
+    /* color: white;*/
+        fill: purple;
+   }

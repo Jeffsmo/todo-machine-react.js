@@ -1,0 +1,17 @@
+.todo-Search{
+    display: grid;
+    place-items: center;
+    margin: 0 0 32px 0;
+}
+
+.todo-Search__input{
+    color: black;
+    margin: 0;
+    padding: 8px 12px 8px 12px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border: none;
+}
+
+::placeholder{
+    color: black;
+}

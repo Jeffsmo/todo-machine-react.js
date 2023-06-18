@@ -1,0 +1,33 @@
+.counter-container__title-container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .counter-container {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .counter-container h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 48px;
+    margin-top: 20px;
+  }
+  
+  .counter-container span {
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .counter-container img {
+    height: 150px;
+    width: 150px;
+  }

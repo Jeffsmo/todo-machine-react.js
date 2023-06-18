@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation-name: background-animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: url(./imagenes/atardecer-en-la-montanas-ilustracion_3840x2160_xtrafondos.com.jpg);
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  margin: 0;
+
 }
+/*
+@keyframes background-animation {
+  0% {
+    background: linear-gradient(60deg, white, aliceblue);
+  }
+  25% {
+    background: linear-gradient(60deg, aliceblue, azure);
+  }
+  50% {
+    background: linear-gradient(60deg, azure, ghostwhite);
+  }
+  75% {
+    background: linear-gradient(60deg, ghostwhite, white);
+  }
+  100% {
+    background: linear-gradient(60deg, white, aliceblue);
+  }
+}
+*/
