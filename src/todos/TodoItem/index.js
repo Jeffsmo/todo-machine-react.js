@@ -1,6 +1,6 @@
 import React from 'react';
-import { CompleteIcon } from './icons/checkIcon';
-import { CloseIcon } from './icons/deleteIcon';
+import { CompleteIcon } from '../../icons/checkIcon';
+import { CloseIcon } from '../../icons/deleteIcon';
 import './TodoItem.css';
 
 /*<span className={`list-Todo__item--CompleteItem ${props.completed && "list-Todo__item--active"}`}

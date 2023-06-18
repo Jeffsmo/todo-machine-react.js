@@ -1,5 +1,5 @@
 import './TodoCounter.css';
-import Logo from './imagenes/logo.jpeg'
+import Logo from '../../imagenes/logo.jpeg'
 
 function ToDoCounter(props)
 {
