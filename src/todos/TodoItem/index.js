@@ -16,7 +16,10 @@ function ToDoItem(props)
           completed={props.completed}
           onCheck = {props.onCheck}
         />
-        <p className='list-Todo__item--text'>{props.text}</p>
+        <div className='lis-Todo__item--text-container'>
+          <p className='list-Todo__item--text'>{props.text}</p>
+        </div>
+
         {/*<span className='list-Todo__item--CloseItem'
         onClick={props.onDelete}
         >X</span>*/}

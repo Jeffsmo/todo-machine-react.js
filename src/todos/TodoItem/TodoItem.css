@@ -9,6 +9,7 @@
     margin: 0 6px 24px 6px;
     background-color: rgba(200, 200, 200, 0.5);
     backdrop-filter: blur(5px);
+
   }
 
 .list-Todo__item--completed{
@@ -52,11 +53,30 @@
     margin: 0;
     color: black;
     font-size: medium;
-    font-weight: bold;
+    font-weight: bold;    
+    max-width: 180px;
+    max-height: fit-content;
+    overflow: auto;
+  }
+
+    
+  .list-Todo__item--text-container {
+    width: 200px; /* Ancho deseado para el contenedor */
+    border: 1px solid #ccc;
+    overflow: hidden; /* Evita que el contenido desborde */
+    transition: height 0.3s ease; 
   }
   
   .list-Todo__item span {
     margin: 0;
   }
   
+  .list-Todo__item--text::-webkit-scrollbar{
+    width: 7px;
+  }
   
+  .list-Todo__item--text::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.4); /* Por ejemplo: gris semitransparente */
+    backdrop-filter: blur(100px);
+  }
