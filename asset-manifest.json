@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Jeffsmo/todo-machine-react.js.git/static/css/main.4c15be0d.css",
-    "main.js": "/Jeffsmo/todo-machine-react.js.git/static/js/main.8708ea03.js",
+    "main.css": "/Jeffsmo/todo-machine-react.js.git/static/css/main.d0005a56.css",
+    "main.js": "/Jeffsmo/todo-machine-react.js.git/static/js/main.8962efce.js",
     "static/media/atardecer-en-la-montanas-ilustracion_3840x2160_xtrafondos.com.jpg": "/Jeffsmo/todo-machine-react.js.git/static/media/atardecer-en-la-montanas-ilustracion_3840x2160_xtrafondos.com.166402e40c950238d3e2.jpg",
     "static/media/logo.jpg": "/Jeffsmo/todo-machine-react.js.git/static/media/logo.878fec36a079461ab66d.jpg",
     "static/media/close.svg": "/Jeffsmo/todo-machine-react.js.git/static/media/close.d8fe4d94650e99cd0d19ca2438dec1a9.svg",
     "static/media/Checked.svg": "/Jeffsmo/todo-machine-react.js.git/static/media/Checked.1f3af2df36ce6c4f44d0bbc823bf4786.svg",
     "index.html": "/Jeffsmo/todo-machine-react.js.git/index.html",
-    "main.4c15be0d.css.map": "/Jeffsmo/todo-machine-react.js.git/static/css/main.4c15be0d.css.map",
-    "main.8708ea03.js.map": "/Jeffsmo/todo-machine-react.js.git/static/js/main.8708ea03.js.map"
+    "main.d0005a56.css.map": "/Jeffsmo/todo-machine-react.js.git/static/css/main.d0005a56.css.map",
+    "main.8962efce.js.map": "/Jeffsmo/todo-machine-react.js.git/static/js/main.8962efce.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c15be0d.css",
-    "static/js/main.8708ea03.js"
+    "static/css/main.d0005a56.css",
+    "static/js/main.8962efce.js"
   ]
 }
