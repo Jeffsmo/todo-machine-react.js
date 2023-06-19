@@ -16,6 +16,7 @@
   cursor: pointer;
   transition: transform 0.5s;
   border: none;
+  z-index: 1;
 }
 
 .addButton:hover {

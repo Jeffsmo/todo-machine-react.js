@@ -1,5 +1,5 @@
 import './TodoCounter.css';
-import Logo from '../../imagenes/logo.jpeg'
+import Logo from '../../imagenes/logo.jpg'
 import React from 'react';
 import { TodoContext } from '../../App/TodoContext';
 
@@ -14,7 +14,10 @@ function ToDoCounter()
     <div className='title-container__counter-container'>
      <div className='counter-container'>
       <div>
-        <img src={Logo} alt='' className='Logo'/> </div>
+        <img src={Logo} alt='' className='Logo'/> 
+
+        </div>
+        <label>Bienvenido a TODO MACHINE :D!!</label>
       <h1 >
   
         Has completado <span>{completedTodos}</span> de <span>{totalTodos}</span>

@@ -1,14 +1,50 @@
 import React from "react";
 import './CreateTodoMenu.css'
+import { TodoContext } from "../../App/TodoContext";
 
 function CreateToDO(){
+    const {
+        addTodo,
+        setOpenModal,
+
+    } = React.useContext(TodoContext)
+
+    const [newTodoValue, setNewTodoValue] = React.useState('');
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        addTodo(newTodoValue);
+        setOpenModal(false);
+    }
+
+    const onCancel = ()=>{
+        setOpenModal(false);
+    }
+
+    const onChange = (event)=>{
+        setNewTodoValue(event.target.value)
+    }
     return(
         <div className="create-todo-menu--container">
-            <div className="input__container">
-                <label className="input__label">CreateToDO</label>
-                <input placeholder="Enter your username" className="input" name="text" type="text"/>
-                <p className="input__description">What do you want to call yourself?</p>
-            </div>
+            <form
+                onSubmit={onSubmit}
+            className="input__container">
+                <label className="input__label">CREA UN NUEVO TO DO</label>
+                <textarea placeholder="Crea una nueva Tarea..." className="input-menu" 
+                value={newTodoValue}
+                onChange={onChange}/>
+                    <div className="button-container">
+                        <button 
+                        type="button"
+                        className="button-cancel"
+                        onClick={onCancel}> Cancelar</button>
+                        <button
+                        type=""
+                        className="button-accept"> Añadir</button>
+                    </div>
+
+                <p className="input__description">Tienes pendientes por hacer?</p>
+            </form>
         </div>
     )
 }

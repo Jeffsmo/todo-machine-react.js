@@ -72,6 +72,6 @@ body{
       overflow: auto;
     }
     body{
-      background-size: cover;     
+      background-size: 300% 150%;     
     }
   }

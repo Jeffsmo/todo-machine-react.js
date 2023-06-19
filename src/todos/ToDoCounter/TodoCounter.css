@@ -21,6 +21,12 @@
     padding: 48px;
     margin-top: 20px;
   }
+  .counter-container label {
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+    font-weight: lighter;
+  }
   
   .counter-container span {
     font-weight: bold;

@@ -8,7 +8,7 @@
     width: var(--width-of-input);
    }
    /* styling of Input */
-   .input {
+   .input-search {
     color: #fff;
     font-size: 0.9rem;
     background-color: rgba(221, 221, 221, 0.5);
@@ -30,21 +30,23 @@
     transition: 0.3s;
    }
    /* Hover on Input */
-   input:hover {
-    background: var(--input-hovered-color);
+   .input-search:hover {
+
+    background-color: rgba(202, 202, 202, 0.479);
+    
    }
    
 
    /* here is code of animated border */
-   input:focus ~ .input-border {
+   .input-search ~ .input-border {
     width: 100%;
    }
    /* === if you want to do animated border on typing === */
    /* remove input:focus code and uncomment below code */
-   input:valid ~ .input-border{
+   .input-search ~ .input-border{
      width: 100%;
    } 
 
-   input::placeholder{
+   .input-search::placeholder{
     color: black;
    }

@@ -22,6 +22,8 @@ function AppUI(){
     openModal,
     setOpenModal   
     }=React.useContext(TodoContext)
+
+
     return (
         <>
             <div className='container'>
@@ -67,6 +69,7 @@ function AppUI(){
                 <Modal>
                     <CreateToDO></CreateToDO>
                 </Modal>
+
             )}
             <CreateToDoButton />
         </>

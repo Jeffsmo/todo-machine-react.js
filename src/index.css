@@ -17,22 +17,10 @@ body {
   margin: 0;
 
 }
-/*
-@keyframes background-animation {
-  0% {
-    background: linear-gradient(60deg, white, aliceblue);
-  }
-  25% {
-    background: linear-gradient(60deg, aliceblue, azure);
-  }
-  50% {
-    background: linear-gradient(60deg, azure, ghostwhite);
-  }
-  75% {
-    background: linear-gradient(60deg, ghostwhite, white);
-  }
-  100% {
-    background: linear-gradient(60deg, white, aliceblue);
+
+@media(max-width: 640px){
+
+  body{
+    background-size: 100%;     
   }
 }
-*/

@@ -17,6 +17,14 @@ const TodoContext = React.createContext();
 
         //EVENTOS --------------------------------------------------------------------  
 
+        const addTodo = (text)=>{
+            const newTodos = [...todos];
+            newTodos.push({
+                text,
+                completed:false,
+            });
+            saveTodos(newTodos);
+        }
 
         const checkTodo = (text) => {
             const newTodos = [...todos];
@@ -67,7 +75,8 @@ const TodoContext = React.createContext();
                 checkTodo,
                 deleteTodo,
                 openModal,
-                setOpenModal               
+                setOpenModal,
+                addTodo               
             }}>
                 {children}
             </TodoContext.Provider>

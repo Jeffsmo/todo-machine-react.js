@@ -1,21 +1,18 @@
 /*.create-todo-menu--container{
     max-width: 200px;
-    display: flex;
+    display: grid;
     flex-direction: column;
-    gap: 6px;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 15px;
-    border-radius: 20px;
-    position: relative;
 }*/
 
 .input__container {
-    max-width: 200px;
+    max-width: 400px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 6px;
     background: rgba(255, 255, 255, 0.3);
-    padding: 15px;
+    padding: 24px 128px;
     border-radius: 20px;
     position: relative;
   }
@@ -40,7 +37,7 @@
     margin-left: 0.4em;
     color: #000;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1.3em;
     font-weight: bold;
   }
   
@@ -51,18 +48,80 @@
     color: rgba(0, 0, 0, 0.5);
   }
   
-  .input {
+  .input-menu {
     border: none;
     outline: none;
     width: 100%;
-    padding: 0.6em;
-    padding-left: 0.9em;
+    padding: 16px;
+    padding-left: 32px;
     border-radius: 20px;
     background: #fff;
     transition: background 300ms, color 300ms;
   }
   
-  .input:hover,.input:focus {
+  .input-menu:hover,.input-menu:focus {
     background: rgb(0, 0, 0);
     color: #fff;
+  }
+
+  .button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .button-accept {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 8px;
+  }
+  
+  .button-accept:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .button-accept:active {
+    transform: translateY(-1px);
+  }
+
+  .button-cancel {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 8px;
+  }
+  
+  .button-cancel:hover {
+    background-color: #c43b23;
+    box-shadow: 0px 15px 20px rgba(229, 67, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .button-cancel:active {
+    transform: translateY(-1px);
   }

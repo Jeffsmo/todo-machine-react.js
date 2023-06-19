@@ -13,7 +13,7 @@ function ToDoSearch()
 
   return(
     <div className='todo-Search'>
-      <input className="input" placeholder="Type your text" required="" type="text"
+      <input className="input-search" placeholder="Type your text" required="" type="text"
         value={searchValue}
         onChange={
           (event)=>{
