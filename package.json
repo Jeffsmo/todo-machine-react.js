@@ -31,7 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/home/steve/Escritorio/React_Page/curso-react-intro/build/",
+  "homepage": "https://github.com/Jeffsmo/todo-machine-react.js.git",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
